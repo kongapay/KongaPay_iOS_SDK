@@ -134,7 +134,7 @@ Client uses the access code to request access token
 KongaPay returns the access token and refresh token on success of step 3 request
 Client then uses the access token to request resources from the server.
 
-Base URL for OAuth: https://staging-kongapayauth.igbimo.com
+Base URL for OAuth: https://sandbox-auth.kongapay.com
 
 Step I
 To request for an access code 
@@ -210,7 +210,7 @@ Access code expires 30 secs after it was requested which means the access code m
 
 This allow Merchants to debit a linked KongaPay Account using the Payment Token provided by KongaPay.
 
-Base URL for KongaPay: http://kpay-sand.bamboo-kongapay-mw.igbimo.com/v3/
+Base URL for KongaPay: https://sandbox.kongapay.com/v3/
 
 Definition of parameters:
 merchant_id - Merchant Id provided by KongaPay. String (Maximum of 15).
@@ -257,7 +257,7 @@ Error response:
 
 This allow Merchants to requery a KongaPay transaction using the payment_reference used in making payment.
 
-Base URL for KongaPay: http://kpay-sand.bamboo-kongapay-mw.igbimo.com/v3/
+Base URL for KongaPay: https://sandbox.kongapay.com/v3/
 
 Definition of parameters:
 merchant_id - Merchant Id provided by KongaPay. String (Maximum of 15).
