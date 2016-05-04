@@ -1,116 +1,125 @@
 # KongaPay_iOS_SDK
 
-THE KongaPay iOS Framework Documentation
+##THE KongaPay iOS Framework Documentation.
 The kongapay iOS framework is designed for use in iOS development environment. It can be installed and used by anyone who wishes to use the KongaPay payment service to accept payment on their native iPhone, iPad and iPod touch applications.
 This framework can be integrated seamlessly into your development environment and used in your development. It was developed using Apple’s Objective C programming language, and can run in the Xcode IDE.
-
-KongaPay Framework Integration
-
- To integrate framework into your project:
+##KongaPay Framework Integration
+###To integrate framework into your project
  
-1. Download the ZIP files from this repository 
-(KongaPayPaymentService.framework and KongaPayPaymentService.bundle)
+1. Download the ZIP files from this repository
+ 
+   **KongaPayPaymentService.framework and KongaPayPaymentService.bundle**.
+
 
 2. Unzip the downloaded file and add these files into your project by dragging them into your project navigation column in your Xcode development environment. You can add them to a framework group for purpose of organization.
-    Don’t forget to click on the “copy items if needed “ check box while adding the framework to your project 
-    
-    
-    
-    
-    
-KongaPay Framework Usage
+Don’t forget to click on the “copy items if needed “ check box while adding the framework to your project. 
+
+###KongaPay Framework Usage
 
 To use framework in your ViewController or view you will have to perform the following actions:
 
 1. Import the KongaPayPaymentService framework in your ViewController or view this is demonstrated below:
 
-      \#import \<KongaPayPaymentService/KongaPayPaymentService.h\>
+      ```objective-c
+      #import <KongaPayPaymentService/KongaPayPaymentService.h>
+      ```
 
 2. Implement the KongaPayPaymentComplete delegate which will contain the delegate methods. The KongaPayment delegate, contains delegate methods that provide feedback and act as a way for you to handle responses after payment.
 
-      @interface ... ()\<KongaPayPaymentCompleteDelegate\>
+      ```objective-c
+      @interface ... ()<KongaPayPaymentCompleteDelegate>
+      ```
 
 3. Implement the KongaPayPaymentCompleteDelegate delegate methods in the
 view controller or view where you wish to initiate the payment to enable you handle the response from Pre-approved payments and One-off payments. These delegate methods are listed below:
 
- -(void)paymentDidCompleteSuccessfully:(id)theresponseData:
+     ```objective-c
+     -(void)paymentDidCompleteSuccessfully:(id)theresponseData:
+     ```
 This delegate method is called on a successful One-off payment process with the payment data response sent through “theresponseData” variable.
 
- -(void)paymentDidFailWithError:(id)theErrorData:
+
+    ```objective-c
+    -(void)paymentDidFailWithError:(id)theErrorData:
+    ```
 This delegate method is called when a One-off payment process fails with the response data sent through “therErrorData” variable.
  
- -(void)linkMerchantDidCompleteSuccessfully:(id)theresponseData
+ 
+ 
+    ```objective-c
+    -(void)linkMerchantDidCompleteSuccessfully:(id)theresponseData
+    ```
 This delegate method is called on a successful Pre-approved payment call with the response data sent through “theresponseData” variable.
 
- -(void)linkMerchantDidFailWithError:(id)theErrorData
+
+    ```objective-c
+    -(void)linkMerchantDidFailWithError:(id)theErrorData
+    ```
 This delegate method is called when a Pre-approved payment fails and the response data is sent through “theErrorData” variable.
 
-Using the KongaPay Framework for Payment
 
-There are two ways of using the KongaPay Framework for payment
+##Using the KongaPay Framework for Payment
 
-To perform a one time payment.
+There are two ways of using the KongaPay Framework for payment:
 
-To allow users authorize for pre approved payments.
+1.To perform a one time payment
 
+2.To allow users authorize for pre approved payments
 
+###One-Time Payment
+ To use the framework for one-time payment you have to initialize KongaPayRegisteration Class as demonstrated below.
 
+   ```objective-c
+   KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithPayMerchantView:view  theMerchantID:@"Merchant_id"  theTransactionID: @"Transaction_id"  theAmount:@"Amount"  theClientKey:@"Client_key  isLiveEnvironment:Value"];
+   ```
 
-One-Time Payment
+**view** = your viewcontroller’s view or Uiview from which you are initializing the payment service.
 
- To use the framework for one-time payment you have to initialize KongaPayRegisteration Class as demonstrated below
+**Merchant_id** = Your merchant ID as a merchant wanting to use the kongaPay Payment Service. This would have been given to you when you registered with KongaPay
 
-KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithPayMerchantView:view  theMerchantID:@"Merchant_id"  theTransactionID: @"Transaction_id"  theAmount:@"Amount"  theClientKey:@"Client_key  isLiveEnvironment:Value"];
+**Transaction_id** = The ID of the transaction which you want KongaPay to be used as a payment for.
 
-view = your viewcontroller’s view or Uiview from which you are initializing the payment service.
+**Amount** = This is the cost of the item to be paid for using KongaPay Amount should be in the format 5000.00, 200.00, etc.
 
-Merchant_id = Your merchant ID as a merchant wanting to use the kongaPay Payment Service. This would have been given to you when you registered with KongaPay
+**Client_Key** = This is your client key given to you when you registered with KongaPay as a merchant or seller.
 
-Transaction_id = The ID of the transaction which you want KongaPay to be used as a payment for.
-
-Amount = This is the cost of the item to be paid for using KongaPay Amount should be in the format 5000.00, 200.00, etc.
-
-Client_Key = This is your client key given to you when you registered with KongaPay as a merchant or seller.
-
-Value = a boolean value indicating the environment on which you are implementing. A value of “YES” signifies you are implementing with the live environment, while a value of “NO” signifies you are implementing with the Test environment
+**Value** = a boolean value indicating the environment on which you are implementing. A value of “YES” signifies you are implementing with the live environment, while a value of “NO” signifies you are implementing with the Test environment
 On successful payment the paymentDidCompleteSuccessfully delegate method listed in process 3 above is triggered, which you will handle in your Implementation. On Failure, the paymentDidFailWithError delegate method is triggered.
 
 
-
-
-
-Pre-approved Payment
+###Pre-approved Payment
 
 A pre-approved payment is one in which merchants can charge a user without the user explicitly initiating such payments provided the user has authorized such transactions for a particular merchant. To use the framework for this purpose, initialize the KongaPayRegisteration Class as demonstrated below:
+   ```objective-c
+   KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithLinkMerchantView:view theMerchantID:@"Merchant_id" theClientKey:@"Client_Key" isLiveEnvironment:Value];
+   ```
 
-KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithLinkMerchantView:view theMerchantID:@"Merchant_id" theClientKey:@"Client_Key" isLiveEnvironment:Value];
+**view** = your viewcontroller’s view or Uiview from which you are initializing the payment service.
 
-view = your viewcontroller’s view or Uiview from which you are initializing the payment service.
+**Merchant_id** = Your merchant ID as a merchant wanting to use the KongaPay Payment Service. This would have been given to you when you registered with KongaPay.
 
-Merchant_id = Your merchant ID as a merchant wanting to use the KongaPay Payment Service. This would have been given to you when you registered with KongaPay.
+**Client_Key** = This is your client key given to you when you registered with KongaPay as a merchant or seller.
 
-Client_Key = This is your client key given to you when you registered with KongaPay as a merchant or seller.
-
-Value = a boolean value indicating the environment on which you are implementing. A value of “YES” signifies you are implementing with the live environment, while a value of “NO” signifies you are implementing with the Test environment
+**Value** = a boolean value indicating the environment on which you are implementing. A value of “YES” signifies you are implementing with the live environment, while a value of “NO” signifies you are implementing with the Test environment.
 
 On successful pre-approved payment, the linkMerchantDidCompleteSuccessfully delegate method  listed in process 3 above is triggered, with a linked token as its response object. You may be required to supply this token to perform auto billing for a subscriber of your service. On Failure, the linkMerchantDidFailWithError delegate method is triggered.
 
 
 
 
-Setting Delegate
+###Setting Delegate
 
 Finally you need to set the KongaPayPaymentService delegate to your viewcontroller or view after initialisation as shown in Pre-approved Payment and One-Time Payment above. If the delegate is not set you will not get responses from the four delegate methods implemented in process 3 above.
 
+  ```objective-c
   _regHandler.delegate = self;
-  
-  
-  
-Thank you and have a nice time using the KongaPay Payment iOS Framework
+  ```
+
+##Thank you and have a nice time using the KongaPay Payment iOS Framework
 
 
 
-Making Payments Using KongaPay Payment Token Linked with A User’s KongaPay Account
+#Making Payments Using KongaPay Payment Token Linked with A User’s KongaPay Account
 
 After successfully linking a User’s KongaPay Account to a Merchant’s account, Payment Token is provided to the Merchant by KongaPay which is to be used by the Merchant to make payments on behalf of the User. 
 This documentation covers how to make payments on behalf of the User using the KongaPay Payment Token. This is based on the assumption that implementing Merchant has KongaPay Payment Tokens that is to be debited.
