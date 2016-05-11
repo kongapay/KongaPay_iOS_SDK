@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		529D3D411C29963200105EC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D3D401C29963200105EC5 /* main.m */; };
+		529D3D441C29963200105EC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D3D431C29963200105EC5 /* AppDelegate.m */; };
+		529D3D471C29963200105EC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529D3D461C29963200105EC5 /* ViewController.m */; };
+		529D3D4A1C29963200105EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529D3D481C29963200105EC5 /* Main.storyboard */; };
+		529D3D4C1C29963200105EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529D3D4B1C29963200105EC5 /* Assets.xcassets */; };
+		529D3D4F1C29963200105EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529D3D4D1C29963200105EC5 /* LaunchScreen.storyboard */; };
+		6314C50E1CE36D0200C02636 /* btn_check_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 6314C50C1CE36D0200C02636 /* btn_check_inactive.png */; settings = {ASSET_TAGS = (); }; };
+		6314C50F1CE36D0200C02636 /* checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 6314C50D1CE36D0200C02636 /* checkbox_checked.png */; settings = {ASSET_TAGS = (); }; };
+		ECC1D8DC008C9839D546C733 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D18DE0DC98F253C6614C49A1 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A9CED8095FE40E434331074 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		529D3D3C1C29963200105EC5 /* KPayPaymentDemoUsingFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPayPaymentDemoUsingFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		529D3D401C29963200105EC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		529D3D421C29963200105EC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		529D3D431C29963200105EC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		529D3D451C29963200105EC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		529D3D461C29963200105EC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		529D3D491C29963200105EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		529D3D4B1C29963200105EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		529D3D4E1C29963200105EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		529D3D501C29963200105EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6314C50C1CE36D0200C02636 /* btn_check_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_check_inactive.png; sourceTree = "<group>"; };
+		6314C50D1CE36D0200C02636 /* checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_checked.png; sourceTree = "<group>"; };
+		AB5304D07D58E2509D9139CE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D18DE0DC98F253C6614C49A1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		529D3D391C29963200105EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC1D8DC008C9839D546C733 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		529D3D331C29963200105EC5 = {
+			isa = PBXGroup;
+			children = (
+				529D3D3E1C29963200105EC5 /* KPayPaymentDemoUsingFramework */,
+				529D3D3D1C29963200105EC5 /* Products */,
+				BC19405715C397196E5F7464 /* Pods */,
+				93487D5F15F6FDA4496229B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		529D3D3D1C29963200105EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				529D3D3C1C29963200105EC5 /* KPayPaymentDemoUsingFramework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		529D3D3E1C29963200105EC5 /* KPayPaymentDemoUsingFramework */ = {
+			isa = PBXGroup;
+			children = (
+				529D3D421C29963200105EC5 /* AppDelegate.h */,
+				529D3D431C29963200105EC5 /* AppDelegate.m */,
+				529D3D451C29963200105EC5 /* ViewController.h */,
+				529D3D461C29963200105EC5 /* ViewController.m */,
+				529D3D481C29963200105EC5 /* Main.storyboard */,
+				529D3D4B1C29963200105EC5 /* Assets.xcassets */,
+				529D3D4D1C29963200105EC5 /* LaunchScreen.storyboard */,
+				529D3D501C29963200105EC5 /* Info.plist */,
+				529D3D3F1C29963200105EC5 /* Supporting Files */,
+			);
+			path = KPayPaymentDemoUsingFramework;
+			sourceTree = "<group>";
+		};
+		529D3D3F1C29963200105EC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6314C50C1CE36D0200C02636 /* btn_check_inactive.png */,
+				6314C50D1CE36D0200C02636 /* checkbox_checked.png */,
+				529D3D401C29963200105EC5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93487D5F15F6FDA4496229B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D18DE0DC98F253C6614C49A1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC19405715C397196E5F7464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A9CED8095FE40E434331074 /* Pods.debug.xcconfig */,
+				AB5304D07D58E2509D9139CE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		529D3D3B1C29963200105EC5 /* KPayPaymentDemoUsingFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529D3D531C29963200105EC5 /* Build configuration list for PBXNativeTarget "KPayPaymentDemoUsingFramework" */;
+			buildPhases = (
+				188A95DEE2ED493BCCCEC3E4 /* Check Pods Manifest.lock */,
+				529D3D381C29963200105EC5 /* Sources */,
+				529D3D391C29963200105EC5 /* Frameworks */,
+				529D3D3A1C29963200105EC5 /* Resources */,
+				F8BA842A07CBE7CE78A9653D /* Embed Pods Frameworks */,
+				852EDC2892EA29D77DA418A7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPayPaymentDemoUsingFramework;
+			productName = KPayPaymentDemoUsingFramework;
+			productReference = 529D3D3C1C29963200105EC5 /* KPayPaymentDemoUsingFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		529D3D341C29963200105EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = KongaPay;
+				TargetAttributes = {
+					529D3D3B1C29963200105EC5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 529D3D371C29963200105EC5 /* Build configuration list for PBXProject "KPayPaymentDemoUsingFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 529D3D331C29963200105EC5;
+			productRefGroup = 529D3D3D1C29963200105EC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				529D3D3B1C29963200105EC5 /* KPayPaymentDemoUsingFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529D3D3A1C29963200105EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6314C50E1CE36D0200C02636 /* btn_check_inactive.png in Resources */,
+				529D3D4F1C29963200105EC5 /* LaunchScreen.storyboard in Resources */,
+				6314C50F1CE36D0200C02636 /* checkbox_checked.png in Resources */,
+				529D3D4C1C29963200105EC5 /* Assets.xcassets in Resources */,
+				529D3D4A1C29963200105EC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		188A95DEE2ED493BCCCEC3E4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		852EDC2892EA29D77DA418A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8BA842A07CBE7CE78A9653D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529D3D381C29963200105EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529D3D471C29963200105EC5 /* ViewController.m in Sources */,
+				529D3D441C29963200105EC5 /* AppDelegate.m in Sources */,
+				529D3D411C29963200105EC5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		529D3D481C29963200105EC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529D3D491C29963200105EC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		529D3D4D1C29963200105EC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529D3D4E1C29963200105EC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		529D3D511C29963200105EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		529D3D521C29963200105EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		529D3D541C29963200105EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9CED8095FE40E434331074 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/KPayPaymentDemoUsingFramework",
+				);
+				INFOPLIST_FILE = KPayPaymentDemoUsingFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongapay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9ab3ea22-82aa-49b6-a6ba-882e31ebe8bb";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		529D3D551C29963200105EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5304D07D58E2509D9139CE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/KPayPaymentDemoUsingFramework",
+				);
+				INFOPLIST_FILE = KPayPaymentDemoUsingFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongapay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9ab3ea22-82aa-49b6-a6ba-882e31ebe8bb";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		529D3D371C29963200105EC5 /* Build configuration list for PBXProject "KPayPaymentDemoUsingFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D3D511C29963200105EC5 /* Debug */,
+				529D3D521C29963200105EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529D3D531C29963200105EC5 /* Build configuration list for PBXNativeTarget "KPayPaymentDemoUsingFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529D3D541C29963200105EC5 /* Debug */,
+				529D3D551C29963200105EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 529D3D341C29963200105EC5 /* Project object */;
+}

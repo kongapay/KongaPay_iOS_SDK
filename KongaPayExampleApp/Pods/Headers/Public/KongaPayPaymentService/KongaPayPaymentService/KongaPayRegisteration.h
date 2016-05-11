@@ -1,0 +1,1 @@
+../../../../KongaPayPaymentService/KongaPayPaymentService.framework/Versions/A/Headers/KongaPayRegisteration.h
