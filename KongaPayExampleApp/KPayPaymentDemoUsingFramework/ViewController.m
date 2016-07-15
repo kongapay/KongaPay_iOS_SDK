@@ -67,12 +67,12 @@
         
         if(sender.tag == 1)
         {
-            _regHandler = [[KongaPayRegisteration alloc] initWithPayMerchantView:self.view theMerchantID:@"kongaPayApp" theTransactionID:theTransactionId.text theAmount:theamount.text theClientKey:@"Kpay4pp$ss" isLiveEnviroment:isLive];
+            _regHandler = [[KongaPayRegisteration alloc] initWithPayMerchantView:@"kongaPayApp" theTransactionID:theTransactionId.text theAmount:theamount.text theClientKey:@"Kpay4pp$ss" isLiveEnviroment:isLive];
             _regHandler.delegate = self;
         }
         else
         {
-            _regHandler = [[KongaPayRegisteration alloc] initWithLinkMerchantView:self.view theMerchantID:@"kongaPayApp" theClientKey:@"Kpay4pp$ss" isLiveEnviroment:isLive];
+            _regHandler = [[KongaPayRegisteration alloc] initWithLinkMerchantView:@"kongaPayApp" theClientKey:@"Kpay4pp$ss" isLiveEnviroment:isLive];
             _regHandler.delegate = self;
         }
     }

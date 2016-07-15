@@ -1,10 +1,10 @@
 PODS:
-  - KongaPayPaymentService (1.0.2)
+  - KongaPayPaymentService (1.0.3)
 
 DEPENDENCIES:
-  - KongaPayPaymentService (~> 1.0.2)
+  - KongaPayPaymentService (~> 1.0.3)
 
 SPEC CHECKSUMS:
-  KongaPayPaymentService: 3801e6cbd848f77c04900166f5bb0d279474224a
+  KongaPayPaymentService: 5e58ff740485b7434ae10ecfc7a9941eb4dcfaeb
 
 COCOAPODS: 0.39.0
