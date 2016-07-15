@@ -82,10 +82,8 @@ There are two ways of using the KongaPay Framework for payment:
  To use the framework for one-time payment you have to initialize KongaPayRegisteration Class as demonstrated below.
 
    ```objective-c
-   KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithPayMerchantView:view  theMerchantID:@"Merchant_id"  theTransactionID: @"Transaction_id"  theAmount:@"Amount"  theClientKey:@"Client_key  isLiveEnvironment:Value"];
+   KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithPayMerchantView:@"Merchant_id"  theTransactionID: @"Transaction_id"  theAmount:@"Amount"  theClientKey:@"Client_key  isLiveEnvironment:Value"];
    ```
-
-**view** = your viewcontroller’s view or Uiview from which you are initializing the payment service.
 
 **Merchant_id** = Your merchant ID as a merchant wanting to use the kongaPay Payment Service. This would have been given to you when you registered with KongaPay
 
@@ -103,10 +101,8 @@ On successful payment the paymentDidCompleteSuccessfully delegate method listed 
 
 A pre-approved payment is one in which merchants can charge a user without the user explicitly initiating such payments provided the user has authorized such transactions for a particular merchant. To use the framework for this purpose, initialize the KongaPayRegisteration Class as demonstrated below:
    ```objective-c
-   KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithLinkMerchantView:view theMerchantID:@"Merchant_id" theClientKey:@"Client_Key" isLiveEnvironment:Value];
+   KongaPayRegisteration *_regHandler = [[KongaPayRegisteration alloc] initWithLinkMerchantView:@"Merchant_id" theClientKey:@"Client_Key" isLiveEnvironment:Value];
    ```
-
-**view** = your viewcontroller’s view or Uiview from which you are initializing the payment service.
 
 **Merchant_id** = Your merchant ID as a merchant wanting to use the KongaPay Payment Service. This would have been given to you when you registered with KongaPay.
 
