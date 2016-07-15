@@ -4,7 +4,6 @@
 The kongapay iOS framework is designed for use in iOS development environment. It can be installed and used by anyone who wishes to use the KongaPay payment service to accept payment on their native iPhone, iPad and iPod touch applications.
 This framework can be integrated seamlessly into your development environment and used in your development. It was developed using Apple’s Objective C programming language, and can run in the Xcode IDE.
 ##KongaPay Framework Integration
-###To integrate framework into your project
 
 #### Integration Using CocoaPads
 1. If you have configured your xcode project to use cocoapods already, then open your podfile and paste the following
