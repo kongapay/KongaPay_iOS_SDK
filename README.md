@@ -132,7 +132,7 @@ Use the following default values for testing purpose in the sandbox environment
 
 **Phone Number** = 08189460199
 
-**PIN** = 1423
+**PIN** = 2233
 
 **OTP** = 1234
 
