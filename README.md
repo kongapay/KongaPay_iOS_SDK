@@ -9,7 +9,7 @@ This framework can be integrated seamlessly into your development environment an
 1. If you have configured your xcode project to use cocoapods already, then open your podfile and paste the following
 
     ```objective-c
-      pod 'KongaPayPaymentService', '~> 1.0.2'
+      pod 'KongaPayPaymentService', '~> 1.0.3'
       ```
 then update your podfile by running pod update from the terminal window.
 2. For those who have not configured their xcode project to use cocoapods, you can find the reference on how to do that here:
@@ -127,10 +127,15 @@ Finally you need to set the KongaPayPaymentService delegate to your viewcontroll
 Use the following default values for testing purpose in the sandbox environment
 
 **Merchant_id** = kongaPayApp
+
 **Client_Key** = Kpay4pp$ss
+
 **Phone Number** = 08189460199
+
 **PIN** = 1423
+
 **OTP** = 1234
+
 
 ##Thank you and have a nice time using the KongaPay Payment iOS Framework
 
