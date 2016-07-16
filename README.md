@@ -87,7 +87,7 @@ There are two ways of using the KongaPay Framework for payment:
 
 **Merchant_id** = Your merchant ID as a merchant wanting to use the kongaPay Payment Service. This would have been given to you when you registered with KongaPay
 
-**Transaction_id** = The ID of the transaction which you want KongaPay to be used as a payment for.
+**Transaction_id** = The ID of the transaction which you want KongaPay to be used as a payment for. This must be unique for every transaction. You can use any value for testing purpose, but it must be unique per transaction
 
 **Amount** = This is the cost of the item to be paid for using KongaPay Amount should be in the format 5000.00, 200.00, etc.
 
