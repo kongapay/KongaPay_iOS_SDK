@@ -122,6 +122,15 @@ Finally you need to set the KongaPayPaymentService delegate to your viewcontroll
   ```objective-c
   _regHandler.delegate = self;
   ```
+###Testing Framework
+
+Use the following default values for testing purpose in the sandbox environment
+
+**Merchant_id** = kongaPayApp
+**Client_Key** = Kpay4pp$ss
+**Phone Number** = 08189460199
+**PIN** = 1423
+**OTP** = 1234
 
 ##Thank you and have a nice time using the KongaPay Payment iOS Framework
 
